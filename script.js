@@ -4,7 +4,6 @@ function timelineone(){
             trigger:"#home",
             scrub:1,
             start:"top top",
-            markers:true,
             pin:true,
             end:"bottom -250%"
         }
@@ -103,7 +102,6 @@ function timelinetwo(){
             trigger:"#second",
             pin:true,
             scrub:1,
-            markers:true,
             start:"top top",
             end:"bottom -250%",
         }
