@@ -1,0 +1,492 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+
+    height: 100%;
+    width: 100%;
+
+}
+#main{
+    width: 100%;
+}
+#second{
+    position:relative;
+    width: 100%;
+    height: 100vh;
+}
+#home{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+
+}
+#home img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+}
+#overlay{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+#overlay #nav,#second #nav{
+    z-index: 9999999;
+    width: 100%;
+    height: 15vh;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 50px;
+} 
+#nav h1{
+    font-size: 1.4vw;
+    text-align: left;
+    text-transform: uppercase;
+}
+#nav{
+    position: absolute;
+    z-index: 999999;
+}
+#nav #rightnav{
+    height:1.2vw;
+    width: 8vw;
+}
+
+#nav .shades{
+    height: 100%;
+    width: 100%;
+    display: flex;
+}
+
+#shade1{
+    width: 20%;
+    height: 100%;
+    background-color: rgb(255,255,255);
+}
+#shade2{
+    width: 20%;
+    height: 100%;
+    background-color: rgb(204,204,204);
+}
+#shade3{
+    width: 20%;
+    height: 100%;
+    background-color: rgb(153,153,153);
+}
+#shade4{
+    width: 20%;
+    height: 100%;
+    background-color: rgb(102,102,102);
+}
+#shade5{
+    width: 20%;
+    height: 100%;
+    background-color: rgb(51,51,51);
+}
+#shade6{
+    width: 20%;
+    height: 100%;
+    background-color: rgb(0,0,0);
+}
+#nav #rghtnavcnt{
+    height: 100%;
+    width: 100%;
+    margin-top: 5px;
+    margin-left: .65vw;
+    display: flex;
+    justify-content: space-between;
+}
+#rghtnavcnt h3{
+    font-size:1vw;
+}
+#circle{
+    width: 70vw;
+    height: 70vw;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+#overlay #smcircle{
+    width:43vw;
+    height: 43vw;
+    border-radius: 50%;
+    background-color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+#top{
+    height: 100%;
+    width: 100%;
+}
+#circle img{
+    width: 100%;/* taki woh circle bada hona par imgaes automatic badi ho jaya */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%) ;
+}
+
+#top img{
+    transform: translate(-50%,-50%) rotate(-180deg);
+}
+#top img:nth-child(1){
+    transform: translate(-50%,-50%) rotate(-180deg) scale(2);
+}
+#top img:nth-child(2){
+    transform: translate(-50%,-50%) rotate(-180deg) scale(1.5);
+}
+#top img:nth-child(3){
+    transform: translate(-50%,-50%) rotate(-180deg) scale(1);
+}
+#btm{
+    width: 100%;
+    height: 100%;
+}
+#btm img:nth-child(1){
+    transform: translate(-50%,-50%) scale(2);
+}
+#btm img:nth-child(2){
+    transform: translate(-50%,-50%) scale(1.5);
+}
+#btm img:nth-child(3){
+    transform: translate(-50%,-50%) scale(1);
+}
+#btmnav{
+    z-index: 99999;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content:space-between;
+    height:7vw;
+    padding: 30px;
+}
+#btmnav img{
+    z-index: 99999;
+    width: 6.5vw;
+    height: 100%;
+}
+#centerimg{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 30vw;
+    transform: translate(-50%,-50%);
+    z-index: 999999999; 
+}
+#centerimg h3{
+    font-size: 15px;
+    font-weight: 150;
+}
+#centerimg #cimg{
+position: relative;
+width: 100%;
+height: 250px; 
+}
+#centerimg img{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 100%;
+    height: 100%;
+}
+#centerimg :nth-child(1){
+    margin-bottom:10px ;
+}
+#centerimg :nth-child(3){
+    margin-bottom:10px ;
+}
+#overlay>h1{
+    position: absolute;
+    left: 50%;
+    bottom: 0%;
+    font-weight: 300;
+    transform: translate(-50%,0%) ;
+    font-size: 10vw;
+    z-index: 999999;
+    text-transform: uppercase;
+}
+#overlay>h2{
+    position: absolute;
+    left: 50%;
+    bottom: -30%;
+    font-weight: 300;
+    transform: translate(-50%,0%)rotate(30deg);
+    transform-origin: 0%;
+    font-size: 10vw;
+    z-index: 999999;
+    color: rgba(255, 255, 255, 1);
+    letter-spacing: .5vw;
+    text-transform: uppercase;
+}
+
+#gola{
+    width:5vw;
+    height: 5vw;
+    border-radius: 50%;
+    background-color: rgb(213, 167, 180);
+    position: absolute;
+    z-index: 9999999999999999;
+    bottom: -35%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+#pinkbox{
+    position: absolute;
+    top:130%;
+    z-index: 999999999999;
+    height: 25vw;
+    width:35vw;
+    background-color: rgb(213, 167, 180);
+}
+#info{
+    position: absolute;
+    top: 35%;
+    left: 20%;
+}
+.inf{
+    margin-left: 2vw;
+}
+#pinkbox #info h2{
+    text-transform: uppercase;
+    color: #fff;
+    font-weight: 200;
+    font-size: 1.1vw;
+    letter-spacing: 1px;
+}
+#color{
+    position: absolute;
+    top: 80%;
+    left: 25%;
+}
+#color h3{
+    text-transform: uppercase;
+    color: #fff;
+    font-weight: 200;
+    font-size: 1vw;
+    letter-spacing: 1px;
+}
+h3 span{
+    font-size: 1.5vw;
+}
+#color h3 #space{
+    width: 60px;
+    display: inline-block;
+}
+#second #stop{
+    z-index: 999;
+    position: relative;
+    height: 65%;
+    width: 100%;
+    border-bottom: 1px solid #000;
+}
+#second #sbtm{
+    z-index: 99999;
+    background-color: #fff;
+    position: relative;
+    height: 35%;
+    width: 100%;
+    overflow: hidden;
+}
+#stop .circle{
+position: absolute;
+height: 15vw;
+width: 15vw;
+border-radius: 50%;
+background-color: pink;
+left: 50%;
+top: 150%;
+transform: translate(-50%,-50%);
+}
+#stop .purple{
+z-index: 9;
+left:45%;
+background: linear-gradient(to right,rgb(213, 167, 180),rgb(213, 167, 180));
+}
+        
+#stop .pink{
+left:55%;
+background-color: rgb(180, 170, 213);
+}
+#stop>h1{
+    position: absolute;
+    z-index: 99999999;
+    bottom: 0%;
+    left:100%;
+    line-height: .65;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 2vw;
+    font-size: 22vw;
+}
+#sbtm #first{
+z-index: 99999;
+font-weight: 500;
+position: absolute;
+top: 50%;
+text-align: center;
+left: 50%;
+transform: translate(-50%,-50%);
+font-size: 3vw;
+text-transform: uppercase;
+}
+#sbtm #sec{
+opacity: 0;
+font-weight: 500;
+position: absolute;
+top: 50%;
+text-align: center;
+left: 50%;
+transform: translate(-50%,-50%);
+font-size: 3vw;
+text-transform: uppercase;
+}
+#stop #minipinkbox{
+    position: absolute;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    z-index: 9999;
+}
+.pinkmini{
+    width: 20%;
+    height:100%;
+}
+#box1{
+    background-color: rgb(223, 177, 190);
+}
+#box2{
+    background-color: rgb(233, 187, 200);
+}
+#box3{
+    background-color: rgb(243, 197, 210);
+}
+
+#box4{
+    background-color: rgb(250, 207, 220);
+}
+#box5{
+    background-color: rgb(255, 227, 240);}
+#sbtm>h2{
+    position: absolute;
+    z-index: 999999;
+    font-size: 4vw;
+    font-weight: 400;
+    top:20%;
+    left:2%
+}
+#one1{
+    top:10%
+}
+#two2{
+    opacity: 0;
+}
+#three3{
+    opacity: 0;
+}
+@media(max-width:500px){
+    #overlay #nav, #second #nav {
+        padding:20px 18px;
+    }
+    #nav h1 {
+        font-size: 2.4vw;
+    }
+    #nav #rightnav {
+        height: 2.2vw;
+        width: 16vw;
+    }
+    #rghtnavcnt h3 {
+        font-size: 1.5vw;
+    }
+    #nav #rghtnavcnt {
+    margin-top: 5px;
+    margin-left: 1.65vw;
+    }
+    #centerimg {
+        width: 79vw;}
+    #centerimg #cimg {
+    height: 162px;
+    }
+    #btmnav img {
+        width: 10.5vw;
+    }
+    #btmnav{
+        height: 25vw;
+    }
+    #pinkbox{
+    height: 30vw;
+    width: 47vw;
+}
+h3 span {
+    font-size: 2.5vw;
+}
+#info{
+    top:24%;
+}
+#info h2{
+    font-size:2.1vw;
+}
+#color {
+    top:68%;
+    left: 34%;
+}
+.inf{
+    font-size: 2vw;
+}   
+#overlay>h1 {
+    font-size: 15vw;
+    font-weight: 900;
+    bottom: 7%;
+    }
+    #overlay>h2{
+        font-size: 15vw;
+        font-weight: 900;
+}
+#gola {
+    width: 25vw;
+    height: 25vw;
+}
+
+#circle {
+    width: 125vw;
+    height: 125vw;
+}
+#overlay #smcircle {
+    width: 90vw;
+    height: 90vw;
+}
+#stop{
+    height: 60%;
+}
+#sbtm{
+    height: 40%;
+}
+#stop .circle {
+    height: 30vw;
+    width: 30vw;
+}
+#sbtm #first,#sbtm #sec{
+    font-size: 6vw;
+    width: 100%;
+}
+#sbtm>h2{
+    font-size: 10vw;
+}
+#stop>h1{
+    font-size: 40vw;
+}
+#minipinkbox{
+    bottom: -50%;
+}
+}
