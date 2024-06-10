@@ -231,12 +231,13 @@ height: 250px;
 }
 
 #gola{
+    
     width:5vw;
     height: 5vw;
     border-radius: 50%;
     background-color: rgb(213, 167, 180);
     position: absolute;
-    z-index: 99999;
+    z-index: 99999999;
     bottom: -35%;
     left: 50%;
     transform: translate(-50%,-50%);
