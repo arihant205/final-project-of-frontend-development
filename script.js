@@ -59,7 +59,6 @@ function timelineone(){
         scrub:0,
         ease:Power1,
     },"hello")  
-    
     .to("#smcircle",{
         scale:0.2,
         duration:1,
@@ -78,7 +77,7 @@ function timelineone(){
     },"hlo")
     .to("#overlay>h2",{
         rotate:0,
-        bottom:0,
+        bottom:"10%",
         ease:Power1,
     },"hlo")
     
@@ -98,72 +97,75 @@ function timelineone(){
     })
 }
 timelineone()
-var t2=gsap.timeline({
-    scrollTrigger:{
-        trigger:"#second",
-        pin:true,
-        scrub:1,
-        markers:true,
-        start:"top top",
-        end:"bottom -250%",
-    }
-})
-t2.to(".circle"
-    ,{ top:"50%",
-        stagger:0.1
+function timelinetwo(){
+    var t2=gsap.timeline({
+        scrollTrigger:{
+            trigger:"#second",
+            pin:true,
+            scrub:1,
+            markers:true,
+            start:"top top",
+            end:"bottom -250%",
+        }
     })
-t2.to(".circle",{
-    left:"50%"
-},)
-t2.to(".circle",{
-    scale:.7
-},)
-t2.to(".purple",{
-    scale:7,
-    duration:3
-},)
-t2.to("#stop h1",{
-    left:"-230%",
-    duration:5
-},"hell")
-t2.to("#sbtm #one1",{
-    top:"0%",
-    opacity:0,
-    duration:1,
-},"hell")
-t2.to("#sbtm #two2",{
-    delay:0.8,
-    top:"10%",
-    opacity:1,
-    duration:2
-},"hell")
-t2.to("#sbtm #first",{
-    opacity:0,
-    delay:.5,
-    duration:1
-},"hell")
-t2.to("#sbtm #sec",{
-    delay:1.7,
-    opacity:1,
-    duration:1
-},"hell")
-t2.to("#stop .purple",{
-    delay:1.7,
-    background:"linear-gradient(to right,rgb(213, 167, 180),rgb(180, 170, 213))",
-    duration:1
-},"hell")
-t2.to("#sbtm #two2",{
-    top:"0%",
-    opacity:0,
-    duration:0.5,
-},"chal")
-t2.to("#sbtm #three3",{
-    delay:0.8,
-    top:"10%",
-    opacity:1,
-    duration:1
-},"chal")
-t2.from("#minipinkbox .pinkmini",{
-    y:"500",
-    stagger:0.1
-},"chal")
+    t2.to(".circle"
+        ,{ top:"50%",
+            stagger:0.1
+        })
+    t2.to(".circle",{
+        left:"50%"
+    },)
+    t2.to(".circle",{
+        scale:.7
+    },)
+    t2.to(".purple",{
+        scale:7,
+        duration:3
+    },)
+    t2.to("#stop h1",{
+        left:"-230%",
+        duration:5
+    },"hell")
+    t2.to("#sbtm #one1",{
+        top:"0%",
+        opacity:0,
+        duration:1,
+    },"hell")
+    t2.to("#sbtm #two2",{
+        delay:0.8,
+        top:"10%",
+        opacity:1,
+        duration:2
+    },"hell")
+    t2.to("#sbtm #first",{
+        opacity:0,
+        delay:.5,
+        duration:1
+    },"hell")
+    t2.to("#sbtm #sec",{
+        delay:1.7,
+        opacity:1,
+        duration:1
+    },"hell")
+    t2.to("#stop .purple",{
+        delay:1.7,
+        background:"linear-gradient(to right,rgb(213, 167, 180),rgb(180, 170, 213))",
+        duration:1
+    },"hell")
+    t2.to("#sbtm #two2",{
+        top:"0%",
+        opacity:0,
+        duration:0.5,
+    },"chal")
+    t2.to("#sbtm #three3",{
+        delay:0.8,
+        top:"10%",
+        opacity:1,
+        duration:1
+    },"chal")
+    t2.to("#minipinkbox .pinkmini",{
+        height:"100%",
+        stagger:0.1
+    },"chal")
+}
+timelinetwo()
